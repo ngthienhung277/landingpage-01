@@ -5,7 +5,10 @@
 :root {
   --primary-color: #0f1b4c;
 }
-
+html,
+body {
+  scroll-behavior: smooth;
+}
 html {
   font-size: 62.5%;
 }
@@ -54,7 +57,7 @@ a {
   background: #e6f0ff;
   padding-top: 26px;
   position: sticky;
-  top:-26px;
+  top: -26px;
   z-index: 1;
 }
 
@@ -62,8 +65,9 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background: #e6f0ff;
-  height: calc(100vh-90px);
+  height: calc(100vh - 90px);
 }
 
 .navbar {
@@ -105,32 +109,27 @@ a {
   border-radius: 8px;
 }
 
-.hero {
-  margin-top: 130px;
-}
-
-.hero .sub-title {
-    font-weight: 500;
-    font-size: 1.8rem;
-    line-height: 1.5;
-    letter-spacing: 0.01em;
-    color: #687690;
-}
-
-.hero .title {
-  margin-top: 8px;
-  font-size: 6.2rem;
-  font-weight: 700;
-  line-height: 1.19; /* 118.75% */
-
-  color: #000336;
-}
-
-.hero .info {
+.hero-wrap .info {
   width: 51%;
 }
 
-.hero .desc {
+.hero-wrap .sub-title {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #687690;
+}
+
+.hero-wrap .title {
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 6.2rem;
+  line-height: 1.19; /* 118.75% */
+  color: #000336;
+}
+
+.hero-wrap .desc {
   margin-top: 30px;
   font-weight: 400;
   font-size: 1.8rem;
@@ -615,37 +614,36 @@ a {
   line-height: 1.75;
 }
 
-
 .footer .social {
-    display: flex;
-    margin-top: 40px;
+  display: flex;
+  margin-top: 40px;
 }
 
 .footer .social-link + .social-link {
-    margin-left: 16px;
+  margin-left: 16px;
 }
 .footer .social-link:hover {
-    background: #ebebeb;
+  background: #ebebeb;
 }
 
 .footer .row-bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 81px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 81px;
 }
 .footer .social-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 22px;
-    height: 22px;
-    border-radius: 3px;
-    background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 3px;
+  background: #f9f9f9;
 }
 
 .footer .copyright {
-    font-weight: 400;
-    font-size: 1.4rem;
-    color: #c2c2c2;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #c2c2c2;
 }
